@@ -1,0 +1,74 @@
+{
+  "name": "@joinhackyard/instagram-account-mcp",
+  "version": "0.1.0",
+  "description": "MCP server to run and grow an Instagram professional account from Claude, Hermes, Cursor, Codex and any MCP client: reels, carousels, stories, scheduling, trial-reel A/B tests, insights, comments, DMs, hashtag and competitor research, and AI providers (Claude, OpenAI, Azure OpenAI, Gemini, OpenRouter, Groq, Ollama), on Meta's official Instagram API.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "instagram",
+    "instagram-api",
+    "instagram-graph-api",
+    "instagram-reels",
+    "instagram-scheduler",
+    "instagram-insights",
+    "instagram-comments",
+    "meta",
+    "claude",
+    "hermes",
+    "cursor",
+    "ai-agent",
+    "ab-testing",
+    "trial-reels",
+    "social-media",
+    "anthropic",
+    "openai"
+  ],
+  "license": "MIT",
+  "author": "Hackyard (https://hackyard.org)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joinhackyard/instagram-account-mcp.git"
+  },
+  "homepage": "https://github.com/joinhackyard/instagram-account-mcp#readme",
+  "bugs": "https://github.com/joinhackyard/instagram-account-mcp/issues",
+  "type": "module",
+  "bin": {
+    "instagram-account-mcp": "dist/src/cli.js"
+  },
+  "files": [
+    "dist/src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test --test-force-exit --test-timeout=60000 --test-concurrency=1 \"dist/test/*.test.js\"",
+    "prepublishOnly": "npm test",
+    "start": "node dist/src/cli.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
+    "@google/genai": "^3.0.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "openai": "^7.53.0",
+    "zod": "^4.3.6"
+  },
+  "optionalDependencies": {
+    "@napi-rs/keyring": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "typescript": "^7.0.2",
+    "prettier": "^3.9.10"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

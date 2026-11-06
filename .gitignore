@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+.env
+.env.*
+*.db
+*.db-*
+/data/
+.DS_Store
+.claude/

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or setup help
+    url: https://github.com/joinhackyard/instagram-account-mcp/discussions
+    about: Ask in Discussions; run `doctor` first and include its output.
+  - name: Report a security vulnerability
+    url: https://github.com/joinhackyard/instagram-account-mcp/security/advisories/new
+    about: Please report privately, never in a public issue.

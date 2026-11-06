@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest a new tool, option or integration.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The Instagram task you want your AI to handle, e.g. "reply to every unanswered question on my last reel".
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Tool name, inputs, behaviour. Link the Meta API reference if you know it.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: api
+    attributes:
+      label: Checks
+      options:
+        - label: This is possible with Meta's official Instagram API (not just in the Instagram app).

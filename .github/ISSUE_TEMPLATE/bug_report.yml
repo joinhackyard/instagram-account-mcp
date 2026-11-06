@@ -1,0 +1,57 @@
+name: Bug report
+description: Something doesn't work as documented.
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please **remove tokens, client secrets and private video details** from anything you paste.
+        Security problems go to the [private advisory form](https://github.com/joinhackyard/instagram-account-mcp/security/advisories/new), not here.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you asked the AI to do, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Ask Claude: "Upload ~/Videos/clip.mp4 as private"
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `npx @joinhackyard/instagram-account-mcp --version`
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: MCP client
+      options: [Claude Desktop, Claude Code, Hermes Agent, Cursor, Codex, Windsurf, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [macOS, Windows, Linux, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `npx @joinhackyard/instagram-account-mcp doctor`
+      render: text
+  - type: textarea
+    id: logs
+    attributes:
+      label: Tool result or logs
+      description: The tool's error JSON, or the server's stderr from your client's MCP log.
+      render: text

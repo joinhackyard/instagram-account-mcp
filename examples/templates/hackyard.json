@@ -1,0 +1,18 @@
+[
+  {
+    "name": "hackyard",
+    "description": "Standard Hackyard post: calm, specific caption, the Hackyard CTA and brand hashtag.",
+    "caption_footer": "Find your people. hackyard.org",
+    "hashtags": ["Hackyard", "builders", "founders"],
+    "hashtags_in": "caption",
+    "guidance": "Voice: premium, calm and specific. Show real builders and real work; no hype, no clickbait, no emoji strings. Never compare Hackyard to other products. Public calls to action say \"Find your people. hackyard.org\" (never app.hackyard.org). First line under 125 characters and works on its own. 3 to 8 hashtags, no hashtag walls."
+  },
+  {
+    "name": "build2026",
+    "extends": "hackyard",
+    "description": "Hackyard Build 2026 content: event hashtags and the event link.",
+    "caption_footer": "Hackyard Build 2026. Find your people. hackyard.org",
+    "hashtags": ["Build2026", "hackathon"],
+    "guidance": "Build 2026 is Hackyard's hackathon. Link to hackyard.org/build2026 when pointing at the event (never build2026.hackyard.org)."
+  }
+]
