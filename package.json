@@ -54,10 +54,10 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^1.6.0",
+    "@anthropic-ai/sdk": "^1.8.0",
     "@google/genai": "^3.0.0",
     "@modelcontextprotocol/sdk": "^1.32.2",
-    "openai": "^7.53.0",
+    "openai": "^7.55.0",
     "zod": "^4.3.6"
   },
   "optionalDependencies": {
